@@ -22,7 +22,10 @@ body {
     left: 0;
     width: 100%;
     background-color: var(--main-orange);
-    z-index: 10;
+    border-bottom: 2px;
+    border-color: darkslategrey;
+    border-style: solid;
+    font-family: 'Roboto', sans-serif;
 
 }
 
@@ -44,11 +47,21 @@ a{
 .nav-list a {
     display: block;
     font-size: 2.2rem;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .nav-list a:hover {
     background: var(--main-blue);
+}
+
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-list {
+        margin: 0 1rem;
+    }
 }
 /*  MAIN DESIGN */
 
@@ -76,12 +89,32 @@ h1{
 
 #welcome-section > p {
     font-size: 3rem;
+    font-style: italic;
     margin-top: 1px;
     color: darkslategrey;
 }
 
 /*  PROJECT SECTION DESIGN */
 
+#projects {
+    background-color: var(--main-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    left: 0px;
+}
+
+#projects > h2 {
+    font-size: 4.5rem;
+    margin-bottom: 0px;
+
+}
+
+#projects > p {
+    margin-left: 20px;
+}
 .project-image {
     height: calc(100% - 6.8rem);
     width: 100%;
