@@ -1,0 +1,21 @@
+:root{
+    --main-white: #fafafa;
+    --main-orange: #fd6a02;
+    --main-background: #ececee;
+    --main-blue: #00478f;
+}
+
+/* NAV BAR DESIGN */
+#navbar {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    width: 100%;
+
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
