@@ -37,7 +37,6 @@ a{
     display: block;
     font-size: 2.2rem;
     padding: 2rem;
-    color: var(--main-white);
 }
 
 .nav-list a:hover {
@@ -57,4 +56,14 @@ main {
 img {
     display: block;
     width: 100%;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
 }
